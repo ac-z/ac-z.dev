@@ -12,7 +12,8 @@ content_header:: "false"
 rss_hide:: "true"
 ---- END ARISE \\ DO NOT MODIFY THIS LINE ---->
 
-# welcome to ac-z.dev
+# ac&#x2011;z personal site
+
 `$ ./complete-the-work.sh`
 
 I'm a tech enthusiast in the Pacific Northwest. 
