@@ -2,19 +2,24 @@
 /*** Core page styles to set the primary colours and styles to be inherited by everything else ***/
 
 /* Core Styling */
-html * {
+html {
         font-family:monospace;
+        background-color: #000;
 }
 body{
-        margin:60pt auto;
-        max-width:640pt;
+        margin: 20pt auto;
+        padding: 0 20pt;
+        max-width:580pt;
         line-height:1.6;
-        font-size:12pt;
+        font-size:11pt;
         color:#f2a000;
-        background-color:#000;
+        border-radius: 10pt;
 }
 a {
-        color:#FFFFFF
+    color: #00A0FF;
+}
+a:visited {
+    color: #D000FF;
 }
 /********************************/
 /********************************/
@@ -33,7 +38,6 @@ img {
 }
 
 code {
-        background-color:#000;
         border-radius:16px;
         padding-left:30px;
         padding-right:30px;
@@ -41,7 +45,7 @@ code {
 
         padding-top:1px;
         padding-bottom:1px;
-        color:#65f85a;
+        color:#45FF45;
 		font-family:monospace;
 }
 
@@ -55,7 +59,7 @@ pre {
 }
 
 blockquote {
-        border-left:1px solid #65f85a;
+        border-left:3pt solid #f2a000;
         display:block;
         margin-top: 1em;
         margin-bottom: 1em;
@@ -63,14 +67,10 @@ blockquote {
         padding-left: 10px;
         margin-right: 40px;
         font-style: italic;
-        color:#46ab3e;
 }
 
 hr {
-        color:#65f85a;
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 300px;
+        color:#f2a000;
 }
 
 #endline { /* Special kind of <hr> for spacing out footnotes from the rest of a post */
@@ -81,32 +81,27 @@ hr {
         margin-top: 80px;
 }
 
-h1{
-        line-height:1.2
-}
-
-h2,h3{
-        padding-top:24px;
-        line-height:1.2
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
 }
 
 /* Style for inline dates. These are configured via a separate include file in /config/content_header.html. See notes on Arise page creation for more details. */
 .date { 
         padding-bottom:0;
         margin-bottom:0;
-        font-size:14px;
+        font-size:12pt;
 }
 
 @media screen and (max-width: 900px) {
-.date { 
+    .date { 
         text-align:right;
-}
+    }
 }
 @media screen and (min-width: 901px) {
-.date { 
+    .date { 
         float:right;
-        margin-left:30px;
-}
+        margin-left:22pt;
+    }
 }
 
 /********************************/
@@ -123,25 +118,35 @@ h2,h3{
 
 /* Navbar styling. */
 .topbar {
-        border:1px solid #f2a000;
+        border:1pt solid #f2a000;
         text-align:center;
-        float: left;
         margin: 5pt 10pt;
         padding: 5pt 10pt;
+        flex-direction: 
+}
+@media (min-width: 450pt) {
+    .topbar {
+        float: left;
         display: flex;
         flex-direction: column;
+    }
 }
 .topbar a {
-    color:#FFFFFF;
-    font-size: 16pt;
+    font-size: 14pt;
+    text-decoration: none;
+    margin: 0 4pt;
 }
 
 /* Site footer styling */
 .footer {
-        border-top:2px solid #f2a000;
+        border-top:1pt solid #f2a000;
         font-size:11pt;
-        margin-top:42pt;
+        margin-top:32pt;
         text-align:center;
+        font-size: 9.5pt;
+        max-width: 65%;
+        margin-left: auto;
+        margin-right: auto;
 }
 
 /********************************/
@@ -152,15 +157,15 @@ h2,h3{
 
 /* Arise Index Style */
 .arise-toc-td {
-  border-width: 1px;
+  border-width: 1pt;
   border-color: #65f85a;
   border-top-style: solid;
   text-align: center;
-  padding-right: 10px;
-  padding-bottom: 5px
+  padding-right: 10pt;
+  padding-bottom: 5pt;
 }
 .arise-toc-th {
-  padding-bottom: 20px;
-  border-bottom: 1px;
+  padding-bottom: 15pt;
+  border-bottom: 1pt;
   border-bottom-style: solid;
 }
